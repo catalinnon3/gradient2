@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/deathdate/static/css/main.84bec8af.chunk.css",
-    "main.js": "/deathdate/static/js/main.da32cedd.chunk.js",
-    "runtime-main.js": "/deathdate/static/js/runtime-main.67627fc5.js",
-    "static/css/2.19481ff5.chunk.css": "/deathdate/static/css/2.19481ff5.chunk.css",
-    "static/js/2.a45200fa.chunk.js": "/deathdate/static/js/2.a45200fa.chunk.js",
-    "index.html": "/deathdate/index.html",
-    "precache-manifest.47909335d6ed237ab6ed8058ad0b757b.js": "/deathdate/precache-manifest.47909335d6ed237ab6ed8058ad0b757b.js",
-    "service-worker.js": "/deathdate/service-worker.js",
-    "static/media/skull1.svg": "/deathdate/static/media/skull1.4e9c5d1d.svg",
-    "static/media/skull2.svg": "/deathdate/static/media/skull2.c943ccf9.svg",
-    "static/media/skull3.svg": "/deathdate/static/media/skull3.93729030.svg",
-    "static/media/skull4.svg": "/deathdate/static/media/skull4.f3e97e71.svg",
-    "static/media/story-bg.jpg": "/deathdate/static/media/story-bg.848e2711.jpg"
+    "main.css": "/gradient/static/css/main.c2224b26.chunk.css",
+    "main.js": "/gradient/static/js/main.bd057fca.chunk.js",
+    "runtime-main.js": "/gradient/static/js/runtime-main.20ceab0c.js",
+    "static/css/2.19481ff5.chunk.css": "/gradient/static/css/2.19481ff5.chunk.css",
+    "static/js/2.2770bf4d.chunk.js": "/gradient/static/js/2.2770bf4d.chunk.js",
+    "index.html": "/gradient/index.html",
+    "precache-manifest.0840b1e4612af92b8a2ff3872fea8256.js": "/gradient/precache-manifest.0840b1e4612af92b8a2ff3872fea8256.js",
+    "service-worker.js": "/gradient/service-worker.js",
+    "static/media/afr.png": "/gradient/static/media/afr.07c68f92.png",
+    "static/media/bel.png": "/gradient/static/media/bel.090e75fc.png",
+    "static/media/braz.png": "/gradient/static/media/braz.928e9924.png",
+    "static/media/brit.png": "/gradient/static/media/brit.2c23e7af.png",
+    "static/media/grez.png": "/gradient/static/media/grez.2ce158cb.png",
+    "static/media/kz.png": "/gradient/static/media/kz.cd763b16.png",
+    "static/media/stars.png": "/gradient/static/media/stars.b63fcd21.png",
+    "static/media/us.png": "/gradient/static/media/us.2ef9f417.png",
+    "static/media/zb.png": "/gradient/static/media/zb.51005687.png"
   }
 }

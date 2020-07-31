@@ -4,6 +4,8 @@ import '@vkontakte/vkui/dist/vkui.css';
 import './css/App.css'
 import html2canvas from 'html2canvas';
 
+import eruda from 'eruda';
+
 import { Panel, Title, Footer, View , SimpleCell, ScreenSpinner, Avatar , Button, Snackbar } from '@vkontakte/vkui';
 
 import Icon28StoryOutline from '@vkontakte/icons/dist/28/story_outline';
@@ -96,6 +98,7 @@ class App extends React.Component {
 		this.setState({ photo: user.photo_max_orig, name: user.first_name + ' ' + user.last_name });
 
 		await bridge.send('VKWebAppInit');
+		eruda.init();
 	}
 
 	go(panel) {
@@ -236,7 +239,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<View activePanel={this.state.activePanel} popout={this.state.popout}>
-				<Panel id='main'>
+				<Panel id='main' style={{ zIndex: 1 }}>
 					<Upload onChange={async e => {
 						this.uploadFile('photo', e);
 					}}>
@@ -273,14 +276,14 @@ class App extends React.Component {
 						}
 						{
 							!this.state.loading &&
-							<div className='absolute_centered animated-loading' style={{ width: '100vw' }}>
+							<div className='absolute_centered' style={{ width: '100vw' }}>
 								{
 									this.state.can_generate ?
 										<Upload onChange={async e => {
 											this.uploadFile('photo', e);
 										}}>
 											<Title style={{ color: 'white', textAlign: 'center' }} level='3' weight='medium'>Чтобы узнать, кто вы по национальности, загрузите фотографию, где хорошо видно ваше лицо</Title>
-											<div className='centered' style={{ marginTop: '16px' }}><Button mode='overlay_secondary'>Загрузить</Button></div>
+											<div className='centered' style={{ marginTop: '16px' }}><Button size={'l'} mode='overlay_secondary'>Загрузить</Button></div>
 										</Upload>
 										:
 										<div style={{ position: 'absolute', top: '-5vh', left: '50%', transform: 'translateX(-50%)', width: '80vw' }}>
@@ -344,17 +347,30 @@ class App extends React.Component {
 							!this.state.loading && !this.state.can_generate && !this.state.screen &&
 							<div style={{ position: 'absolute' , bottom: '1vh', width: '100vw', zIndex: 1 }}>
 								<Button onClick={async ()=>{
-									this.setState({ popout: <ScreenSpinner/>, screen: true });
-									await this.sleep(250);
-									let element = document.getElementsByClassName('View__panels')[0];
-									html2canvas(element, { allowTaint: true }).then(async canvas => {
-										let blob = canvas.toDataURL('image/png');
-										try{
-											await bridge.send('VKWebAppShowStoryBox', { background_type: 'image', blob, attachment: { url: 'https://vk.com/app' + app_id, text: 'open', type: 'url' } });
-											this.setState({ shared: true });
-										}catch (e) {}
+									try{
+										this.setState({ popout: <ScreenSpinner/>, screen: true });
+										await this.sleep(750);
+										let element = document.getElementById('main');
+										html2canvas(element, { allowTaint: true }).then(async canvas => {
+											let blob = canvas.toDataURL('image/jpg');
+											try{
+												await bridge.send('VKWebAppShowStoryBox', { background_type: 'image', blob, attachment: { url: 'https://vk.com/app' + app_id, text: 'open', type: 'url' } });
+												this.setState({ shared: true });
+											}catch (e) {}
+											this.setState({ popout: null, screen: false });
+										});
+									}catch (e) {
+										console.error(e);
+										this.setState({ snackbar:
+												<Snackbar
+													layout='vertical'
+													onClose={() => this.setState({ snackbar: null })}
+												>
+													Ошибка
+												</Snackbar>
+										});
 										this.setState({ popout: null, screen: false });
-									});
+									}
 								}} style={{ background: '#ffffff00', color: 'white', fontSize: '20px', letterSpacing: '1px' }} before={<Icon28StoryOutline/>} size='xl'>Поделиться в истории</Button>
 							</div>
 						}
