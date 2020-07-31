@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/gradient2/static/css/main.c2224b26.chunk.css",
-    "main.js": "/gradient2/static/js/main.431ef0c7.chunk.js",
-    "runtime-main.js": "/gradient2/static/js/runtime-main.7a56c4ef.js",
-    "static/css/2.19481ff5.chunk.css": "/gradient2/static/css/2.19481ff5.chunk.css",
-    "static/js/2.49d609bf.chunk.js": "/gradient2/static/js/2.49d609bf.chunk.js",
-    "index.html": "/gradient2/index.html",
-    "precache-manifest.ee3035522b0ec910fe27db695c514350.js": "/gradient2/precache-manifest.ee3035522b0ec910fe27db695c514350.js",
-    "service-worker.js": "/gradient2/service-worker.js",
-    "static/media/afr.png": "/gradient2/static/media/afr.07c68f92.png",
-    "static/media/bel.png": "/gradient2/static/media/bel.090e75fc.png",
-    "static/media/braz.png": "/gradient2/static/media/braz.928e9924.png",
-    "static/media/brit.png": "/gradient2/static/media/brit.2c23e7af.png",
-    "static/media/grez.png": "/gradient2/static/media/grez.2ce158cb.png",
-    "static/media/kz.png": "/gradient2/static/media/kz.cd763b16.png",
-    "static/media/stars.png": "/gradient2/static/media/stars.b63fcd21.png",
-    "static/media/us.png": "/gradient2/static/media/us.2ef9f417.png",
-    "static/media/zb.png": "/gradient2/static/media/zb.51005687.png"
+    "main.css": "/gradient/static/css/main.c2224b26.chunk.css",
+    "main.js": "/gradient/static/js/main.de06c199.chunk.js",
+    "runtime-main.js": "/gradient/static/js/runtime-main.20ceab0c.js",
+    "static/css/2.19481ff5.chunk.css": "/gradient/static/css/2.19481ff5.chunk.css",
+    "static/js/2.2800e392.chunk.js": "/gradient/static/js/2.2800e392.chunk.js",
+    "index.html": "/gradient/index.html",
+    "precache-manifest.1868389a02b4c9f1e84928e42b270ac6.js": "/gradient/precache-manifest.1868389a02b4c9f1e84928e42b270ac6.js",
+    "service-worker.js": "/gradient/service-worker.js",
+    "static/media/afr.png": "/gradient/static/media/afr.07c68f92.png",
+    "static/media/bel.png": "/gradient/static/media/bel.090e75fc.png",
+    "static/media/braz.png": "/gradient/static/media/braz.928e9924.png",
+    "static/media/brit.png": "/gradient/static/media/brit.2c23e7af.png",
+    "static/media/grez.png": "/gradient/static/media/grez.2ce158cb.png",
+    "static/media/kz.png": "/gradient/static/media/kz.cd763b16.png",
+    "static/media/stars.png": "/gradient/static/media/stars.b63fcd21.png",
+    "static/media/us.png": "/gradient/static/media/us.2ef9f417.png",
+    "static/media/zb.png": "/gradient/static/media/zb.51005687.png"
   }
 }
