@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/gradient2/static/css/main.c2224b26.chunk.css",
+    "main.js": "/gradient2/static/js/main.1926bdd3.chunk.js",
+    "runtime-main.js": "/gradient2/static/js/runtime-main.7a56c4ef.js",
+    "static/css/2.19481ff5.chunk.css": "/gradient2/static/css/2.19481ff5.chunk.css",
+    "static/js/2.eb97de9f.chunk.js": "/gradient2/static/js/2.eb97de9f.chunk.js",
+    "index.html": "/gradient2/index.html",
+    "precache-manifest.c897472e63f4962de701e1e6a6d8a4c8.js": "/gradient2/precache-manifest.c897472e63f4962de701e1e6a6d8a4c8.js",
+    "service-worker.js": "/gradient2/service-worker.js",
+    "static/media/afr.png": "/gradient2/static/media/afr.07c68f92.png",
+    "static/media/bel.png": "/gradient2/static/media/bel.090e75fc.png",
+    "static/media/braz.png": "/gradient2/static/media/braz.928e9924.png",
+    "static/media/brit.png": "/gradient2/static/media/brit.2c23e7af.png",
+    "static/media/grez.png": "/gradient2/static/media/grez.2ce158cb.png",
+    "static/media/kz.png": "/gradient2/static/media/kz.cd763b16.png",
+    "static/media/stars.png": "/gradient2/static/media/stars.b63fcd21.png",
+    "static/media/us.png": "/gradient2/static/media/us.2ef9f417.png",
+    "static/media/zb.png": "/gradient2/static/media/zb.51005687.png"
+  }
+}
