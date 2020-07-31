@@ -1,11 +1,3 @@
-body{
-    overflow: hidden;
-}
-
-.Snackbar__body {
-    margin-bottom: 50px;
-}
-
 .centered {
     display: flex;
     display: -ms-flex;
@@ -16,42 +8,55 @@ body{
     -webkit-align-items: center;
     -webkit-justify-content: center;
 }
-.Link {
-    color: inherit;
-}
-.CellButton {
-    color: inherit;
-}
-
-#bg_shapes {
-    opacity: .15;
-}
-
-.bg_shape_container {
+.absolute_centered {
     position: absolute;
-    width: 25%;
-    animation: bg_anim1 10000ms;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-.bg_shape {
-    position: absolute;
-    width: 100%;
-    animation: bg_anim2 10000ms;
+.animated-background {
+    background: linear-gradient(310deg, #19191a, #232324, #2c2d2e, #363738, #454647);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: gradient-animation 45s ease infinite;
+    -moz-animation: gradient-animation 45s ease infinite;
+    animation: gradient-animation 45s ease infinite;
+
+    -webkit-box-shadow: 0px -10px 57px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px -10px 57px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px -10px 57px 0px rgba(0,0,0,0.3);
 }
 
-@keyframes bg_anim1 {
-    100% { transform: translateY(-50vh); }
-    0% { transform: translateY(100vh); }
+@-webkit-keyframes gradient-animation {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+@-moz-keyframes gradient-animation {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+@keyframes gradient-animation {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
 }
 
-@keyframes bg_anim2 {
-    0% { transform: translateX(var(--offset-x-1)); }
-    25% { transform: translateX(var(--offset-x-2)); }
-    50% { transform: translateX(var(--offset-x-3)); }
-    75% { transform: translateX(var(--offset-x-4)); }
-    100% { transform: translateX(var(--offset-x-5)); }
+@keyframes loading {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
-.light_outline {
-    filter: drop-shadow(4px 0px 0 white) drop-shadow(0px 4px 0 white) drop-shadow(-4px 0px 0 white) drop-shadow(0px -4px 0 white);
+.animated-loading {
+    animation: loading .5s ease-in-out;
 }

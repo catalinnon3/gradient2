@@ -1,9 +1,9 @@
 {
-  "name": "deathdate",
+  "name": "gradient",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://catalinnon3.github.io/deaddate/",
+  "homepage": "https://catalinnon3.github.io/gradient/",
   "scripts": {
     "start": "cross-env PORT=10888 react-scripts start",
     "build": "react-scripts build",
@@ -29,10 +29,12 @@
     "eruda": "^2.2.1",
     "html2canvas": "^1.0.0-rc.5",
     "prop-types": "^15.7.2",
+    "random": "^2.2.0",
     "react": "^16.12.0",
     "react-clipboard.js": "^2.0.16",
     "react-copy-to-clipboard": "^5.0.2",
     "react-dom": "^16.9.0",
+    "react-lottie": "^1.2.3",
     "request": "^2.88.2"
   },
   "browserslist": {
